@@ -11,7 +11,7 @@ const Products = () => {
     const fetchCategory = async () => {
       try {
         const res = await axios.get(
-          "https://meet-midy.onrender.com/api/products/"
+          "https://meet-lgon.onrender.com/api/products/"
         );
         setCategory(res.data);
       } catch (error) {
@@ -28,7 +28,7 @@ const Products = () => {
             <Card style={{ width: "18rem" }}>
               <Card.Img
                 variant="top"
-                src={"https://meet-midy.onrender.com/images/" + v.image}
+                src={"https://meet-lgon.onrender.com/images/" + v.image}
                 className="prod"
               />
               <Card.Body>
