@@ -11,7 +11,7 @@ const ManageProduct = () => {
     const fetchCategory = async () => {
       try {
         const res = await axios.get(
-          "https://meet-midy.onrender.com/api/products/"
+          "https://meet-lgon.onrender.com/api/products/"
         );
         setCategory(res.data);
       } catch (error) {
@@ -23,7 +23,7 @@ const ManageProduct = () => {
 
   const deleteProduct = async (id) => {
     try {
-      await axios.post("https://meet-midy.onrender.com/api/products/remove/", {
+      await axios.post("https://meet-lgon.onrender.com/api/products/remove/", {
         id: id,
       });
       // console.log("Post deleted:", id);
@@ -55,7 +55,7 @@ const ManageProduct = () => {
               <td key={v._id}> {v.description} </td>
               <td key={v._id}>
                 <img
-                  src={"https://meet-midy.onrender.com/images/" + v.image}
+                  src={"https://meet-lgon.onrender.com/images/" + v.image}
                   style={{ height: "50px", width: "50px" }}
                   alt=""
                 />

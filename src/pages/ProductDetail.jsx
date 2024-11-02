@@ -13,7 +13,7 @@ const ProductDetail = () => {
     const fetchProduct = async () => {
       try {
         const res = await axios.get(
-          `https://meet-midy.onrender.com/api/products/${id}/`
+          `https://meet-lgon.onrender.com/api/products/${id}/`
         );
         console.log(res);
         setProduct(res.data);
@@ -31,7 +31,7 @@ const ProductDetail = () => {
           <div className="card">
             <img
               className="product-detail"
-              src={"https://meet-midy.onrender.com/images/" + product.image}
+              src={"https://meet-lgon.onrender.com/images/" + product.image}
               alt=""
             />
           </div>
